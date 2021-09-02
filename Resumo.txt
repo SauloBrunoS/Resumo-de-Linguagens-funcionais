@@ -1,0 +1,21 @@
+Resumo - Linguagens Funcionais
+
+Programação funcional basicamente trata de funções matemáticas, possuindo funções e variáveis, mas com a ausência de objetos e métodos.
+Ela possui imutabilidade, não podendo mudar valores ao longo do código.
+Funções de alta ordem consiste em possuir funções que são passadas como parâmetros de outras funções.
+Funções de primeira classe consiste em ter funções que funcionam como qualquer outro valor do código, podendo atribuir uma função a 
+uma variável.
+Funções puras não alteram estados e sempre retornam o mesmo resultado dados os mesmos valores. Elas não podem ter efeitos colaterais,
+que alteram o estado do seu sistema ou qualquer coisa externa.
+Uma forma de tornar uma função impura em função pura é, em vez de ser imperativo, ser declarativo. Porém, dessa maneira, não é possível executar 
+os efeitos colaterais. Assim, centralizamos esses efeitos colaterais em apenas uma parte do código, enquanto as demais são partes "puras".
+Funtores ou mapeáveis são uma forma de se programar sem utilizar null. Basicamente, os funtores podem armazenar um valor, de forma que
+eles podem estar vazios ou conter alguma coisa. Como não é possível trabalhar com os funtores, ao utilizá-los em todo o código, o compilador
+avisa quando isso acontece, sendo necessário utilizar uma função conhecida como map que, ou trabalha com o valor que está do funtor ou,
+caso o funtor esteja vazio, nada é feito. Dessa forma, não ocorrerão erros.
+
+Benefícios da programação funcional
+Imutabilidade - reduz erros, mais fácil de debugar e mais fácil de testar.
+Controle de efeitos colaterais - mais fácil de testar, mais fácil de debugar e mais fácil de seguir o código, pois a parte perigosa
+é centralizada.
+Funtores - reduz uma classe de erros -NullPointerException- e muito mais fácil de reutilizar o código.
